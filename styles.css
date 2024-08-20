@@ -258,3 +258,75 @@ body, h1, h2, p, ul, li, form, input, button {
 .close:hover {
     color: #ff6b6b;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1a1a1a;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section-content ul li {
+        font-size: 18px;
+    }
+
+    .dialog-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section-content ul li {
+        font-size: 16px;
+    }
+
+    .dialog-content {
+        width: 100%;
+        padding: 15px;
+    }
+}
