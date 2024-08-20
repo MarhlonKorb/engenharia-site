@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia Inovadora - Comunidade de Engenharia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">Fórum sobre Engenharia</div>
+            <ul class="nav-links">
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#criar-conta">Criar Conta</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h2>Conectando Engenheiros para um Futuro Mais Seguro</h2>
+            <p>Junte-se à nossa comunidade de engenheiros, compartilhe conhecimento, discuta projetos e colabore para construir o amanhã. Explore tópicos de diversas áreas da engenharia e impulsione sua carreira!</p>
+            <button class="btn" onclick="openDialog()">Cadastre-se Agora</button>
+        </div>
+    </div>
+
+    <!-- Como Funciona -->
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="section-content">
+                <p>Nossa comunidade de engenharia oferece um espaço colaborativo onde você pode:</p>
+                <ul>
+                    <li>Publicar e responder tópicos relacionados a projetos e inovações.</li>
+                    <li>Obter insights valiosos de profissionais experientes.</li>
+                    <li>Participar de discussões técnicas sobre os mais variados campos da engenharia.</li>
+                    <li>Compartilhar suas ideias e receber feedback construtivo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Criar Conta -->
+    <section class="section" id="criar-conta">
+        <div class="container">
+            <h2>Crie sua Conta</h2>
+            <div class="section-content">
+                <p>Faça parte da nossa rede de engenheiros e tenha acesso a uma vasta gama de recursos e oportunidades. Crie sua conta em poucos minutos e comece a colaborar hoje mesmo!</p>
+                <button class="btn" onclick="openDialog()">Cadastre-se</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="section" id="quem-somos">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <div class="section-content">
+                <p>Somos uma comunidade dedicada a engenheiros e estudantes de engenharia, com o objetivo de promover a troca de conhecimentos, a inovação e o desenvolvimento contínuo na área. Nossa missão é facilitar o acesso à informação técnica e criar um ambiente onde ideias possam florescer e se transformar em soluções concretas para os desafios do mundo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Engenharia Inovadora. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Dialog de Cadastro -->
+    <div class="dialog" id="cadastroDialog">
+        <div class="dialog-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <h2>Crie sua Conta</h2>
+            <form>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openDialog() {
+            document.getElementById('cadastroDialog').style.display = 'flex';
+        }
+
+        function closeDialog() {
+            document.getElementById('cadastroDialog').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
